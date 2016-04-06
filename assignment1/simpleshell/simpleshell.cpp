@@ -14,4 +14,11 @@ int main ()
     fprintf(stdout, string);
     }
     return 0;
+    
+    if(stdin = "exit"){
+        exit(0);
+    }
+    else{
+    exit(EXIT_FAILURE);    
+    }
 }
