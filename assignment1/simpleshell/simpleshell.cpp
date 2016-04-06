@@ -19,8 +19,8 @@ void myexecvp(const char*string)
     char * arraystring[200];
     char * chunk;
     chunk = strtok(string, " ");
+    int index = 0;
     while(chunk != NULL){
-        int index = 0;
         index++;
         chunk = strtok(NULL, " ");
     }
