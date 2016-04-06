@@ -14,9 +14,14 @@ void mysystem(char*string)
 }
 
 //execvp method
-void myexecvp(const char*string, char*arraystring[])
+void myexecvp(const char*string)
 {
-    
+    char arraystring[];
+    char * chunk;
+    chunk = strtok (arraystring);
+    while(chunk != NULL){
+        
+    }
 }
 
 int main ()
@@ -30,7 +35,7 @@ int main ()
             _exit(0);
         }
         else{
-            _exit(1);    
+            mysystem(string);    
         }
         
     }
