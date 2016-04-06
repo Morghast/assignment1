@@ -9,10 +9,9 @@ using namespace std;
 int main ()
 {
     int i;
-    
-    fgets(200)
+    char string[200];
+    fgets(200);
     fprintf(stdout, "This is a test");
+    
+    return 0;
 }
-)
-
-return 0;
