@@ -1,4 +1,4 @@
-//Rob's awesome simpleshell
+//Rob Davis's awesome simpleshell
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -20,6 +20,8 @@ void myexecvp(const char*string)
     char * chunk;
     chunk = strtok(string, " ");
     while(chunk != NULL){
+        int index = 0;
+        index++;
         chunk = strtok(NULL, " ");
     }
 }
