@@ -11,7 +11,7 @@ int main ()
     char string[200];
     while(true){
     fgets(string, 200, stdin);
-    fprintf(stdout, "This is a test");
+    fprintf(stdout, string);
     }
     return 0;
 }
