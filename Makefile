@@ -8,6 +8,7 @@ TARGET = helloworld
 
 all: $(TARGET)
 
-$(TARGET): $(CC) $(ARGS) -o $(TARGET) $(SOURCE)
+$(TARGET): 
+        $(CC) $(ARGS) -o $(TARGET) $(SOURCE)
 
 #$(TARGET): 
