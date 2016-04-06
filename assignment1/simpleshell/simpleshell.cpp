@@ -1,10 +1,23 @@
-//
+//Rob's awesome simpleshell
 
 #include <stdlib.h>
 #include <stdio.h>
 #include <iostream>
+#include <unistd.h>
 
 using namespace std;
+
+//system method
+void mysystem(char*string)
+{
+    system(string);
+}
+
+//execvp method
+void myexecvp(const char*string, char*arraystring[])
+{
+    
+}
 
 int main ()
 {
