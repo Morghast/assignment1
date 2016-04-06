@@ -16,11 +16,11 @@ void mysystem(char*string)
 //execvp method
 void myexecvp(const char*string)
 {
-    char arraystring[];
+    char * arraystring[200];
     char * chunk;
-    chunk = strtok (arraystring);
+    chunk = strtok(string, " ");
     while(chunk != NULL){
-        
+        chunk = strtok(NULL, " ");
     }
 }
 
