@@ -12,13 +12,15 @@ int main ()
     while(true){
     fgets(string, 200, stdin);
     fprintf(stdout, string);
-    }
-    return 0;
     
-    if(stdin = "exit"){
+    if(string = "exit"){
         exit(0);
     }
     else{
-    exit(EXIT_FAILURE);    
+    exit(EXIT_1);    
     }
+    
+    }
+    return 0;
+    
 }
