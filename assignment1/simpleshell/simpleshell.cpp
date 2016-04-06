@@ -6,10 +6,11 @@
 
 using namespace std;
 
-while true(
 int main ()
 {
     int i;
+    
+    fgets(200)
     fprintf(stdout, "This is a test");
 }
 )
