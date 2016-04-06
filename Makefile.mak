@@ -11,7 +11,7 @@ TARGET1 = helloworld
 SOURCE2 = assignment1/simpleshell/simpleshell.cpp
 TARGET2 = simpleshell
 
-all: $(TARGET1 TARGET2)
+all: $(TARGET1) $(TARGET2)
 
 $(TARGET1):
 	$(CC) $(ARGS) -o $(TARGET1) $(SOURCE1)
