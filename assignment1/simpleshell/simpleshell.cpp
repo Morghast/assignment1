@@ -13,14 +13,13 @@ int main ()
     fgets(string, 200, stdin);
     fprintf(stdout, string);
     
-    if(string = "exit"){
+    if(strncmp(string, "exit", 4) == 0){
         exit(0);
     }
     else{
-    exit(EXIT_1);    
+    exit(1);    
     }
     
     }
-    return 0;
-    
+    return 0; 
 }
