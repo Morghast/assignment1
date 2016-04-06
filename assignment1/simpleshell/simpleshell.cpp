@@ -6,11 +6,12 @@
 
 using namespace std;
 
+while true(
 int main ()
 {
     int i;
     fprintf(stdout, "This is a test");
 }
+)
 
-
-
+return 0;
