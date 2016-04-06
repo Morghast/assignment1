@@ -3,7 +3,7 @@
 CC = g++
 ARGS = -g -Wall
 
-SOURCE = helloworld.cpp
+SOURCE = assignment1/helloworld/helloworld.cpp
 TARGET = helloworld
 
 all: $(TARGET)
