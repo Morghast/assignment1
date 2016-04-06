@@ -9,7 +9,7 @@ using namespace std;
 int main ()
 {
     int i;
-    fprintf (stdout), "This is a test"
+    fprintf(stdout, "This is a test");
 }
 
 
