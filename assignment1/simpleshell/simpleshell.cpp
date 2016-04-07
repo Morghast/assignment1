@@ -7,13 +7,13 @@
 
 using namespace std;
 
-//system method
+//system function
 void mysystem(char*string)
 {
     system(string);
 }
 
-//execvp method
+//execvp function
 void myexecvp(const char*string)
 {
     char * arraystring[200];
@@ -24,6 +24,12 @@ void myexecvp(const char*string)
         index++;
         chunk = strtok(NULL, " ");
     }
+}
+
+//call_system function
+void mycallsystem()
+{
+    
 }
 
 int main ()
