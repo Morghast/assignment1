@@ -1,5 +1,6 @@
 # Rob's super awesome makefile
 # build an executable named helloworld from helloworld.cpp
+# build an executable named simpleshell from simpleshell.cpp
 CC = g++
 ARGS = -g -Wall
 
