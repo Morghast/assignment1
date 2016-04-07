@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <iostream>
 #include <unistd.h>
+#include <spawn.h>
 
 using namespace std;
 
