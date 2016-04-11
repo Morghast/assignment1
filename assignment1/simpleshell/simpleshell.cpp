@@ -2,20 +2,24 @@
 
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 #include <iostream>
 #include <unistd.h>
 #include <spawn.h>
+#include <sys/wait.h>
 
 using namespace std;
 
+extern char **environ;
+
 //system function
-void mysystem(char*string)
+void mysystem(char * string)
 {
     system(string);
 }
 
 //execvp function
-void myexecvp(const char*string)
+void myexecvp(const char * string)
 {
     char * arraystring[200];
     char * chunk;
@@ -28,9 +32,25 @@ void myexecvp(const char*string)
 }
 
 //call_system function
-void mycallsystem()
+void mycallsystem(char * order66);
 {
-    
+    pid_t younglingid;
+    char * younglings[] = {"sh", "-c", order66, NULL};
+    int sandyness;
+    printf("Execute Order 66: %s\n", order66);
+    sandyness = posix_spawnp($younglingid, "/bin/sh", NULL, NULL, younglings, environ);
+    if (sandyness == 0)
+    {
+        printf("Youngling younglingid: %i\n", younglingid);
+        if (waityounglingid(younglingid, $sandyness, 0) != -1);
+        {
+            printf("Youngling killed with %i\n", sandyness);
+        } else {
+            perror("waityounglingid");
+        }
+    } else {
+        printf("posix_spawn: %s\n", strerror(sandyness));
+    }
 }
 
 int main ()
