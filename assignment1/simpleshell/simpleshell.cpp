@@ -19,7 +19,7 @@ void mysystem(char * string)
 }
 
 //execvp function
-void myexecvp(const char * string)
+void myexecvp(char * string)
 {
     char * arraystring[200];
     char * chunk;
@@ -32,17 +32,17 @@ void myexecvp(const char * string)
 }
 
 //call_system function
-void mycallsystem(char * order66);
+void mycallsystem(char * order66)
 {
     pid_t younglingid;
     char * younglings[] = {"sh", "-c", order66, NULL};
     int sandyness;
     printf("Execute Order 66: %s\n", order66);
-    sandyness = posix_spawnp($younglingid, "/bin/sh", NULL, NULL, younglings, environ);
+    sandyness = posix_spawnp(younglingid, "/bin/sh", NULL, NULL, younglings, environ);
     if (sandyness == 0)
     {
         printf("Youngling younglingid: %i\n", younglingid);
-        if (waityounglingid(younglingid, $sandyness, 0) != -1);
+        if (waitpid(younglingid, sandyness, 0) != -1);
         {
             printf("Youngling killed with %i\n", sandyness);
         } else {
