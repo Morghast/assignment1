@@ -53,20 +53,16 @@ void mycallsystem(char * order66)
     }
 }
 
-int main ()
-{
-    char string[200];
-    while(true){
-        fgets(string, 200, stdin);
-        fprintf(stdout, string);
-        
-        if(strncmp(string, "exit", 4) == 0){
-            _exit(0);
-        }
-        else{
-            mysystem(string);    
-        }
-        
-    }
-    return 0; 
-}
+ int main(int argc, char* argv[]) 
+ {
+     string input;
+     while (true) {
+         cin >> input;
+         cout << "Received: " << input << endl;
+
+         if (input == "exit") {
+             cout << "Exiting now.";
+             return 0;
+         }
+     }
+ }
